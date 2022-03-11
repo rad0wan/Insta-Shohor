@@ -16,6 +16,10 @@ const isLiked = (id) => {
 };
 
 const addToLiked = (id) => {
+  if (likedPostsId.includes(id) === true) {
+    return;
+  };
+  console.log(posts);
   likedPostsId.push(id);
   showPosts(posts);
 };
@@ -134,7 +138,7 @@ const createPost = (post) => {
 const showPosts = (posts) => {
   const productsContainer = document.getElementById("posts");
   productsContainer.innerHTML = "";
-
+console.log(productsContainer);
   posts.forEach((post) => {
     const div = createPost(post);
     productsContainer.appendChild(div);
