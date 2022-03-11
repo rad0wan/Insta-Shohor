@@ -57,7 +57,7 @@
             <h1>Reported posts</h1>
         </div>
     </main>
-    <section class="container mx-auto p-3">
+    <section class="container mx-auto p-3 " id="questions">
         <h3 class="text-center text-success py-3">Questions</h3>
         <div class="accordion" id="accordionExample">
             <div class="accordion-item">
@@ -72,10 +72,10 @@
                     <div class="accordion-body">
                         <strong>JavaScript একটি interpreted language.source code একটি কম্পাইলার নামক একটি প্রোগ্রামের
                             মাধ্যমে পাস করা হয়, যা ইটা কে bytecode এ অনুবাদ করে। যেটা machine বুঝতে পারে এবং চালাতে
-                            পারে। জাভাস্ক্রিপ্টের কোন compilation step নেই. কিন্তু ব্রাউজারে একজন দোভাষী JavaScript কোড
-                            পড়ে।প্রতিটি লাইন ব্যাখ্যা করে এবং এটি চালায়।
-                            ব্রাউজাররা জাস্ট-ইন-টাইম (JIT) compilation নাম একটি technology ব্যবহার করে, যেটা JavaScript
-                            কে executable bytecode মতোই কম্পাইল করে এবং এটা চালানো হয়।
+                            পারে। জাভাস্ক্রিপ্টের কোন compilation step নেই। কিন্তু ব্রাউজারে একজন দোভাষী JavaScript কোড
+                            পড়ে।প্রতিটি লাইন ব্যাখ্যা করে এবং এটি চালায়। ব্রাউজাররা জাস্ট-ইন-টাইম (JIT) compilation
+                            নাম একটি technology ব্যবহার করে। যেটা JavaScript কে executable bytecode মতোই কম্পাইল করে এবং
+                            এটা চালানো হয়।
                     </div>
                 </div>
             </div>
@@ -90,9 +90,9 @@
                     data-bs-parent="#accordionExample">
                     <div class="accordion-body">
                         <strong>event loop একটি প্রক্রিয়া যা Call Stack অপেক্ষা করায় যতক্ষণ পর্যন্ত Call Stack clear হয়
-                            না। যখন Call Stack clear হয় তখন event loop Task Queue কে দরে এবং পরীক্ষা করে Queue তে call
-                            back উপস্থিত আছে কিনা। যদি থাকে তাহলে তাকে Call Stack এ পাঠানো হয়। Call Stack আবার ক্লিয়ার
-                            হওয়ার জন্যে অপেক্ষা করে এবং একই প্রক্রিয়া পুনরাবৃত্তি করে।
+                            না। যখন Call Stack clear হয় তখন event loop Task Queue কে দরে। তারপর পরীক্ষা করে Queue তে
+                            call back উপস্থিত আছে কিনা। যদি থাকে তাহলে তাকে Call Stack এ পাঠানো হয়। Call Stack আবার
+                            ক্লিয়ার হওয়ার জন্যে অপেক্ষা করে এবং একই প্রক্রিয়া পুনরাবৃত্তি করে।
                     </div>
                 </div>
             </div>
@@ -109,7 +109,7 @@
                         <strong>localStorage এবং sessionStorage ঠিক একই জিনিস সম্পন্ন করে এবং একই API আছে। কিন্তু
                             sessionStorage সাথের data উইন্ডো বা ট্যাব বন্ধ না হওয়া পর্যন্ত টিকে থাকে। localStorage
                             সাথের data টিকে থাকে না যতক্ষণ পর্যন্ত ব্যবহারকারী manually ব্রাউজার ক্যাশে সাফ করে।
-                            localStorage এবং sessionStorage দুইটার storage capacity 5MB -10MB . দুইটারই সার্ভারে ডেটা
+                            localStorage এবং sessionStorage দুইটার storage capacity 5MB -10MB । দুইটারই সার্ভারে ডেটা
                             স্থানান্তর নেই। ক্লায়েন্ট শুধুমাত্র localStorage পড়তে পারেন।
                     </div>
                 </div>
